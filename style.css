@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+.upward {
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        width: 40px;
+        height: 40px;
+        background: url(img/plane-up-solid.svg);
+        background-size: cover;
+        z-index: 1;
+        cursor: pointer;
+        visibility: hidden;
+        opacity: 0;
+}
+.upward.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 40px;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.head {
+          background: url(img/bc2.jpg)no-repeat;
+          background-size: 100% 100%;
+          width: 100%;
+      }
+.navbar {
+  padding: .8rem;
+}
+.navbar-nav li {
+  padding-right: 20px;
+}
+.nav-link {
+    font-size: 1.1em !important;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-caption h1 {
+  font-size: 500%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px black;
+}
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px 10px black;
+  padding-bottom: 1rem;
+}
+.text-color {
+  color: #0e0f11;
+}
+.btn-primary {
+  background-color: #6648b1;
+  border: 1px solid #6648b1;
+}
+.btn-primary:hover {
+  background-color: #563d7c;
+  border: 1px solid #563d7c;
+}
+.btn-light {
+  background-color:  cadetblue;
+  border: 1px solid  cadetblue;
+  color: white;
+}
+.btn-light:hover {
+  background-color:  rgb(66, 120, 121);
+  border: 1px solid  rgb(66, 120, 121);
+  color: white;
+}
+.jumbotron {
+  padding: 1rem;
+  border-radius: 0;
+}
+.padding {
+  padding-bottom: 2rem;
+}
+.welcome {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 100%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+.fa-leaf {
+  color: green; 
+}
+.fa-plane-departure {
+  color: #2163af ;
+}
+.fa-utensils {
+  color: coral;
+}
+.fa-star {
+  color: gold;
+}
+.fa-truck-fast {
+  color: #03a9f4;
+}
+.fa-users-between-lines {
+  color:#6648b1
+}
+.fa-hand-holding-dollar {
+  color:chocolate
+}
+.fa-leaf, .fa-plane-departure, .fa-utensils, .fa-truck-fast, .fa-users-between-lines, .fa-star, .fa-hand-holding-dollar {
+  font-size: 4rem;
+  margin: 1rem;
+}
+.scale {
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+   }
+.scale img {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+}
+.scale img:hover {
+transform: scale(1.1); /* Увеличиваем масштаб */
+opacity: 0.7;
+}
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-vk {
+  color: #00aced;
+}
+.fa-instagram {
+  color: #517fa8;
+}
+.fa-youtube {
+  color: #bb0000;
+}
+.fa-facebook:hover,
+.fa-vk:hover, 
+.fa-instagram:hover ,
+.fa-youtube:hover {
+color: #d5d5d5;
+} 
+footer {
+  background-color: #0e0f11;
+  color: #d5d5d5;
+  padding-top: 2rem; 
+}
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+footer a {
+  color: #d5d5d5;
+}
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
+  }
+@media (max-width: 768px) {
+.carousel-caption {
+  top: 45%;
+}
+.carousel-caption h1 {
+  font-size: 350%
+}
+.carousel-caption h3 {
+  font-size: 140%;
+  font-weight: 400;
+  padding-bottom: .2rem;
+}
+.carousel-caption .btn {
+  font-size: 95%;
+  padding: 8px 14px;
+}
+.display-4 {
+font-size: 200%;
+}
+.social a {
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+.carousel-caption {
+  top: 40%;
+}
+.carousel-caption h1 {
+  font-size: 250%
+}
+.carousel-caption h3 {
+  font-size: 110%;
+}
+.carousel-caption .btn {
+  font-size: 90%;
+  padding: 4px 8px;
+}
+.carousel-indicators {
+  display: none;
+}
+.display-4 {
+font-size: 160%;
+}
+.social a {
+    font-size: 2em;
+    padding: .7rem;
+  }
+}
+@media (max-width: )  {
+
+}
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-book {
+  position: relative;
+  /* display: inline-block; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:200px;
+  height: 50px;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-size: 24px;
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 5px;
+  z-index: 1;
+}
+ 
+.btn-book:hover {
+  animation: animate 8s linear infinite;
+}
+ 
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+ 
+.btn-book:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: .5s;
+}
+ 
+.btn-book:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+#myModal {
+  top: 200px;
+  color: cadetblue;
+;
+}
+
+
+
+
+
+
